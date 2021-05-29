@@ -20,8 +20,7 @@ export default function Create() {
     }
 
     const onChangeFile = (e) => {
-        console.log(e.target.files[0])
-        setFile(e.target.files[0])
+        setFile(e.target.files[0]);
     }
 
     const submitForm = (e) => {
