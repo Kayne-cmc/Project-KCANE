@@ -1,0 +1,56 @@
+.Home {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+}
+
+table img {
+    width: 400px;
+    height: auto;
+    margin: 1em 0;
+}
+
+table {
+    border: 3px solid black;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 2px solid black;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 5px 4px;
+}
+
+table tbody td {
+    font-size: 18px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: black;
+}
+
+table tbody tr:hover {
+    background: rgb(201, 212, 238);
+}
+
+table thead {
+    border-bottom: 2px solid black;
+}
+
+table thead th {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Open Sans",sans-serif;
+    color: rgb(5,36,112);
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+.School {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.information h2, .information p{
+    width: 100%;
+}
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+}
+
+.School img {
+    height: auto;
+    width: 100%;
+}
