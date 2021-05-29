@@ -10,11 +10,6 @@ export default function Home() {
     const [schools, setSchools] = useState([]);
     const history = useHistory();
 
-    // function School(props) {
-    //     return(
-    //     )
-    // }
-
     useEffect(() => {
         DataService.schools()
         .then((res) => {
@@ -42,7 +37,9 @@ export default function Home() {
             }
             { !schools && (<p>No schools create yet. Create one <Link to="/create">here</Link></p>)}
             { schools && (
-                <div>
+                <>
+                    <button onClick={create}>Create</button>
+                    <div className="break"></div>
                     <table>
                         <thead>
                             <tr>
@@ -65,8 +62,7 @@ export default function Home() {
                             ))}
                         </tbody>
                     </table>
-                    <button onClick={create}>Create</button>
-                </div>
+                </>
             )}
         </div>
     )

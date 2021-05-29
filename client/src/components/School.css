@@ -2,7 +2,12 @@
     width: 80%;
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: 20px auto;
+}
+
+.School h1 {
+    font-family: "Open Sans", sans-serif;
+    margin: 0.5em auto;
 }
 
 .information h2, .information p{
@@ -13,10 +18,21 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 80%;
+    margin: 1em;
+    position: relative;
+    padding-bottom: 20px;;
 }
 
 .School img {
     height: auto;
-    width: 100%;
+    width: 40%;
+    margin: 1em;
+}
+
+.School a {
+    font-size: 20px;
+    color: rgb(81,150,203);
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }

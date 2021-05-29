@@ -1,7 +1,7 @@
 fieldset {
     width: 50%;
-    margin: 0 auto;
-    padding: 1em;
+    margin: 20px auto;
+    padding: 15px;
     background: rgb(245, 248, 255);
     border: 2px solid black;
     border-radius: 10px;
@@ -39,6 +39,8 @@ form label {
 
 form input[type="text"], textarea{
     outline: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
     border-radius: 5px;
     padding: 10px;
     margin: 0.1em 0;
@@ -57,10 +59,11 @@ form input[type="text"]:focus, textarea:focus {
 
 button {
     border-radius: 20px;
-    font-family: Courier New;
+    font-family: 'Lato', sans-serif;
+    width: 120px;
     margin: 0 auto;
     color: rgb(73,7,107);
-    font-size: 15px;
+    font-size: 16px;
     background: white;
     padding: 5px 10px 5px 10px;
     border: solid rgb(73,7,107) 2px;
@@ -73,6 +76,7 @@ button:hover {
     color: white;
 }
 
-.break {
-    width: 100%;
+.Create h3 {
+    color: red;
+    font-family: 'Quicksand', sans-serif;
 }

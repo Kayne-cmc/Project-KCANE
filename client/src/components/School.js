@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import DataService from '../services/service';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import './School.css';
 
-export default function School() {
+export default function School(props) {
 
-    const { id } = useParams();
     const [school, setSchool] = useState(undefined);
 
     useEffect(() => {
         Aos.init({});
 
-        DataService.school(id)
+        DataService.school(props.match.params.id)
         .then(res => setSchool(res.data))
         .catch(err => console.log(err))
-    }, []);
+    }, [props.match.params.id]);
 
     return (
         <div>

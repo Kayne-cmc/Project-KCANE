@@ -31,8 +31,13 @@ export default function Create() {
 
         setTimeout(() => {
             if(!file) {
-                setError("Please include an image");
-            } else {
+                setLoading(false);
+                return setError("Please include an image");
+            } else if(!form.name || !form.about || !form.location || !form.admission) {
+                setLoading(false);
+                return setError("Please fill all missing fields");
+            }
+                else {
                 const data = new FormData();
                 data.append("submissionImage", file, file.name);
 
@@ -114,10 +119,12 @@ export default function Create() {
                         />
                     </div>
                     <div className="break"></div>
-                    <button type="submit">submit</button>
+                    <div>
+                        <button type="submit">Submit</button>
+                        <h3>{error}</h3>
+                    </div>
                 </fieldset>
             </form>
-            <p>{error}</p>
         </div>
     )
 }

@@ -40,7 +40,6 @@ function checkFileType(file, cb) {
 }
 
 router.post("/img-upload", (req,res) => {
-    // console.log(req);
     imgUpload(req, res, (error) => {
         if(error) {
             console.log("Errors", error);
@@ -130,7 +129,7 @@ router.get("/", (req,res) => {
         })
     } catch(err) {
         console.error(err);
-        res.status(500).send(err)
+        res.status(500).send(err);
     }
 });
 

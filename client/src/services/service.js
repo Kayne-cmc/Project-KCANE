@@ -13,6 +13,9 @@ class DataService {
     create(form) {
         return http.post("/api/submission/create", form);
     }
+    edit(form) {
+        return http.post("/api/submission/edit/" + form._id, form);
+    }
 }
 
 export default new DataService();
