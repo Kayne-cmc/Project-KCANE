@@ -120,7 +120,7 @@ export default function Create() {
                     </div>
                     <div className="break"></div>
                     <div>
-                        <button type="submit">Submit</button>
+                        <button type="submit">Create</button>
                         <h3>{error}</h3>
                     </div>
                 </fieldset>
