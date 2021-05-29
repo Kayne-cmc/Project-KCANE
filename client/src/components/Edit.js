@@ -78,7 +78,7 @@ export default function Edit(props) {
                 <fieldset>
                     <legend>Edit Information</legend>
                     <div className="image inputGroup">
-                        <label htmlFor="image">Image (gif, jpeg, jpg, png):</label>
+                        <label htmlFor="image">Change Image (gif, jpeg, jpg, png):</label>
                         <input id="image" type="file" onChange={onChangeFile}></input>
                     </div>
                     <div className="text inputGroup">

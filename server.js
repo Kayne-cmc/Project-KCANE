@@ -15,7 +15,7 @@ const app = express();
 //Middleware
 app.use(express.static(path.join(__dirname, "client/build")));
 app.use(cors({
-    origin: process.env.ORIGIN,
+    origin: [process.env.ORIGIN],
     credentials: true
 }));
 app.use(express.json());
